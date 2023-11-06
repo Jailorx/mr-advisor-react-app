@@ -1,38 +1,66 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Spirax&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 100vh;
+}
+
+.container {
+  height: 100vh;
+  background: url("/public/bg.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100%;
+  margin: 0 1.2rem;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
   color: white;
+  font-family: "Spirax", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-top: 2rem;
+
+  color: white;
+
+  border-color: white;
+  border-radius: 2rem;
+
+  background-color: transparent;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.button:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 500px) {
+  .heading {
+    font-size: 1rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .button {
+    font-size: 0.8rem;
+    padding: 0.3rem;
   }
 }
